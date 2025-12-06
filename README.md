@@ -22,3 +22,21 @@ NDCG@10
 MRR@10
 
 Streamlit demo to interact with all models
+
+### Running the Project
+#### 1. Run the App Directly
+python -m streamlit run app/app.py
+
+The app will open automatically at:
+http://localhost:8501
+
+### 2. Reproduce the Entire Pipeline (Optional)
+#### Run Data Preprocessing
+python src/data_preprocess.py
+#### Train GRU Sequence Model
+python src/models/gru_seq.py
+#### Run Evaluation of All Models
+python src/models/evaluate.py
+
+
+
